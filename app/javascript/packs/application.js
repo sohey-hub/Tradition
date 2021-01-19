@@ -10,8 +10,7 @@ require("channels")
 require('jquery')
 require('jquery.japan-map.min.js')
 require('jquery.japan-map.js')
-require("../map")
-
+require('map.js')
 
 
 
@@ -27,4 +26,3 @@ require("../map")
 //= require turbolinks
 //= require jquery
 //= require jcanvas
-console.log('hoge')

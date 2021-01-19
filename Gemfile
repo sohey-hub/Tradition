@@ -57,3 +57,4 @@ gem 'jquery-rails'
 gem 'jcanvas-rails'
 
 gem 'devise'
+gem 'pry-rails'
