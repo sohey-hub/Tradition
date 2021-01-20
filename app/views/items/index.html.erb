@@ -1,2 +1,20 @@
 
+<div class="container">
 <div id="map-container"></div>
+</div>
+
+
+  <% @items.each do |item| %>
+  <div class="row">
+  <div class="col-sm-6">
+    <div class="card" style="width: 18rem;">
+    <div class="card-body">
+     <%= link_to image_tag(item.image, class: "card-img-top"), item_path(item.id), method: :get %>
+        <h5 class="card-title"><%= item.title %></h5>
+        <p class="card-text"> <%= item.explanation %></p>
+        <a href="#" class="btn btn-primary">詳細</a>
+      </div>
+    </div>
+    </div>
+    </div>
+  <% end %>
