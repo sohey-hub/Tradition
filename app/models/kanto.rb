@@ -1,0 +1,3 @@
+class Kanto < ApplicationRecord
+
+end
