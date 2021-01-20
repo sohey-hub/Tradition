@@ -1,6 +1,7 @@
 class ItemsController < ApplicationController
   def index
     @items = Item.all
+    @item = Item.find{params[:id]}
   end
 
   def new
@@ -14,6 +15,10 @@ class ItemsController < ApplicationController
     else
       render new_item_path
     end
+  end
+
+  def show
+    @item = Item.find(params[:id])    
   end
 
   private
